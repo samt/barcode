@@ -1,0 +1,26 @@
+{
+	"name": "barcode",
+	"description": "Generate HTML or image barcodes",
+	"author": {
+		"name": "Sam Thompson",
+		"email": "sam@emberlabs.org"
+	},
+	"keywords": [
+		"barcode",
+		"datamatrix",
+		"code39",
+		"code128",
+		"codabar",
+		"qr code",
+		"qr",
+		"code",
+		"upc"
+	],
+	"bugs": "https://github.com/samt/barcode/issues",
+	"version": "0.0.1",
+	"main": "index",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/samt/barcode.git"
+	}
+}
