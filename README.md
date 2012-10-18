@@ -3,14 +3,14 @@
 This library allows you generate HTML barcodes.
 Full support for Image generation is coming soon.
 
-Version is *0.0.1-dev*
+Version is *0.0.2-dev*
 
 ## supported types
 
 * [Code39](http://en.wikipedia.org/wiki/Code39)
+* [Codabar](http://en.wikipedia.org/wiki/Codabar)
 * [DataMatrix](http://en.wikipedia.org/wiki/DataMatrix) (comming soon)
 * [Code128](http://en.wikipedia.org/wiki/Code128) (comming soon)
-* [Codabar](http://en.wikipedia.org/wiki/Codabar) (comming soon)
 * [QR Code](http://en.wikipedia.org/wiki/QR_Code) (comming soon)
 * [UPC](http://en.wikipedia.org/wiki/Universal_Product_Code) (comming soon)
 

@@ -15,7 +15,7 @@ function BarcodeFluent(type) {
 	//	case 'datamatrix':
 		case 'code39':
 	//	case 'code128':
-	//	case 'codabar':
+		case 'codabar':
 	//	case 'qrcode':
 	//	case 'upc':
 			break;
