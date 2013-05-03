@@ -20,7 +20,16 @@ Version is *0.0.2-dev*
 
 ## Usage
 
-coming soon
+From `NodeJS`
+```
+	barcodeLib = require('barcode');
+	
+	var barcode = barcodeLib('code39'); // sets the barcode type (code39 in this case)
+	.size(200,100) //sets the width to 200px wide by 100px high
+	.draw(function(str){ //returns a string containing the barcode as html
+		document.write(str); //write it to DOM
+	});
+```
 
 ## License
 
