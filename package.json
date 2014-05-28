@@ -1,9 +1,9 @@
 {
 	"name": "barcode",
-	"description": "Generate HTML or image barcodes",
+	"description": "Generate 2D and 3D barcodes",
 	"author": {
 		"name": "Sam Thompson",
-		"email": "sam@emberlabs.org"
+		"email": "contact@samt.us"
 	},
 	"keywords": [
 		"barcode",
@@ -17,7 +17,7 @@
 		"upc"
 	],
 	"bugs": "https://github.com/samt/barcode/issues",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"main": "index",
 	"repository": {
 		"type": "git",

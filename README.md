@@ -1,9 +1,6 @@
-# barcode
+# barcode generator
 
-This library allows you generate HTML barcodes.
-Full support for Image generation is coming soon.
-
-Version is *0.0.2-dev*
+This library allows you generate image barcodes
 
 ## supported types
 
@@ -26,7 +23,7 @@ coming soon
 
 [The MIT License (MIT)](http://opensource.org/licenses/mit-license.php)
 
-Copyright (c) 2012 Sam Thompson
+Copyright (c) 2014 Sam Thompson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in

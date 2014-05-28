@@ -1,8 +1,5 @@
-/**
- * barcode
- *
- * (c) copyright 2012 Sam Thompson <sam@emberlabs.org>
- * License: The MIT License - http://opensource.org/licenses/mit-license.php
+/*
+ * barcode generator
  */
 
 var path = require('path');
