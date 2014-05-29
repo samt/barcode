@@ -1,6 +1,6 @@
 {
 	"name": "barcode",
-	"description": "Generate 2D and 3D barcodes",
+	"description": "Generate 1D and 2D barcodes",
 	"author": {
 		"name": "Sam Thompson",
 		"email": "contact@samt.us"
