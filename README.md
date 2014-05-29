@@ -1,4 +1,4 @@
-# barcode generator
+# barcode generator [![Build Status](https://secure.travis-ci.org/samt/barcode.png)](http://travis-ci.org/samt/barcode)
 
 This library allows you generate image barcodes
 
@@ -17,7 +17,24 @@ This library allows you generate image barcodes
 
 ## Usage
 
-coming soon
+  var barcode = require('barcode');
+	var myproduct = new barcode.Code39('00392844283');
+	myproduct.saveImage('/tmp/myproduct.png', {
+		width: 100,
+		height: 40
+	}, function (err) {
+		// img saved!
+	});
+
+	myproduct.getBase64Html({
+		width: 100,
+		height: 40,
+		type: 'jpg',
+		quality: 70
+	}, function (err, base64Encoded) {
+		// toss it in an image tag.
+	});
+
 
 ## License
 
