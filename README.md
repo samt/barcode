@@ -26,7 +26,7 @@ This library allows you generate image barcodes
 		// img saved!
 	});
 
-	myproduct.getBase64Html({
+	myproduct.getBase64({
 		width: 100,
 		height: 40,
 		type: 'jpg',
