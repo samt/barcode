@@ -1,26 +1,29 @@
 {
-	"name": "barcode",
-	"description": "Generate 1D and 2D barcodes",
-	"author": {
-		"name": "Sam Thompson",
-		"email": "contact@samt.us"
-	},
-	"keywords": [
-		"barcode",
-		"datamatrix",
-		"code39",
-		"code128",
-		"codabar",
-		"qr code",
-		"qr",
-		"code",
-		"upc"
-	],
-	"bugs": "https://github.com/samt/barcode/issues",
-	"version": "0.0.4",
-	"main": "index",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/samt/barcode.git"
-	}
+  "name": "barcode",
+  "description": "Generate 1D and 2D barcodes",
+  "author": {
+    "name": "Sam Thompson",
+    "email": "contact@samt.us"
+  },
+  "keywords": [
+    "barcode",
+    "datamatrix",
+    "code39",
+    "code128",
+    "codabar",
+    "qr code",
+    "qr",
+    "code",
+    "upc"
+  ],
+  "bugs": "https://github.com/samt/barcode/issues",
+  "version": "0.0.4",
+  "main": "index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samt/barcode.git"
+  },
+  "dependencies": {
+    "gm": "^1.16.0"
+  }
 }
