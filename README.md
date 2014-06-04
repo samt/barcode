@@ -29,7 +29,7 @@ A working installation of [GraphicsMagick](http://www.graphicsmagick.org/).
 
 	// Set it up and specify your type and options. The following 3
 	// are the only required ones.
-  var barcode = require('barcode');
+	var barcode = require('barcode');
 	var code39 = barcode('code39', {
 		data: "it works",
 		width: 400,
