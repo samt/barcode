@@ -24,6 +24,6 @@
     "url": "https://github.com/samt/barcode.git"
   },
   "dependencies": {
-    "gm": "^1.16.0"
+    "gm": "1.16.0"
   }
 }
