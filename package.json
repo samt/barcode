@@ -17,7 +17,7 @@
     "upc"
   ],
   "bugs": "https://github.com/samt/barcode/issues",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "index",
   "repository": {
     "type": "git",
