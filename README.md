@@ -5,7 +5,7 @@ Generate 1D and 2D barcodes
 ## Supported 1D types
 
 * [Code39](http://en.wikipedia.org/wiki/Code39)
-* [Codabar](http://en.wikipedia.org/wiki/Codabar) (comming soon)
+* [Codabar](http://en.wikipedia.org/wiki/Codabar)
 * [Code128](http://en.wikipedia.org/wiki/Code128) (comming soon)
 * [UPC](http://en.wikipedia.org/wiki/Universal_Product_Code) (comming soon)
 * [ISBN](http://en.wikipedia.org/wiki/ISBN) (comming soon)
