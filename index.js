@@ -6,6 +6,10 @@ var fs = require('fs'),
   path = require('path');
 
 module.exports = function (moduleName, options) {
+  if (options.type) {
+    options.type = options.type.toUpperCase().trim()
+  }
+
   return new Barcode(moduleName, options);
 }
 
