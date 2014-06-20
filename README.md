@@ -6,7 +6,7 @@ Generate 1D and 2D barcodes
 
 * [Code39](http://en.wikipedia.org/wiki/Code39)
 * [Codabar](http://en.wikipedia.org/wiki/Codabar)
-* [Code128](http://en.wikipedia.org/wiki/Code128) (comming soon)
+* [Code128](http://en.wikipedia.org/wiki/Code128) (in progress)
 * [UPC](http://en.wikipedia.org/wiki/Universal_Product_Code) (comming soon)
 * [ISBN](http://en.wikipedia.org/wiki/ISBN) (comming soon)
 
