@@ -6,9 +6,12 @@ var fs = require('fs'),
   path = require('path');
 
 module.exports = function (moduleName, options) {
-  if (options.type) {
-    options.type = options.type.toUpperCase().trim()
-  }
+  options.data = options.data || '';
+  options.barcolor = options.barcolor || '#000';
+  options.bgcolor = options.bgcolor || '#FFF';
+  options.w = options.width || 0;
+  options.h = options.height || 0;
+  options.type = (options.type) ? options.type.toUpperCase().trim() : 'PNG';
 
   return new Barcode(moduleName, options);
 }
