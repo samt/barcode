@@ -13,9 +13,6 @@ module.exports = function (moduleName, options) {
   options.h = options.height || 0;
   options.type = (options.type) ? options.type.toUpperCase().trim() : 'PNG';
 
-  // @todo add error handling here for barcodes for issues with options, each
-  // type should not have to be responsible for it.
-
   return new Barcode(moduleName, options);
 }
 
