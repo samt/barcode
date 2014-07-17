@@ -14,7 +14,9 @@
     "qr code",
     "qr",
     "code",
-    "upc"
+    "upc",
+    "upc-a",
+    "upc-e"
   ],
   "bugs": "https://github.com/samt/barcode/issues",
   "version": "0.0.6",
