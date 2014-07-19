@@ -9,7 +9,7 @@ Generate 1D and 2D barcodes
 * [Code128](http://en.wikipedia.org/wiki/Code128)
 * [UPC-A](http://en.wikipedia.org/wiki/Universal_Product_Code)
 * [UPC-E](http://en.wikipedia.org/wiki/Universal_Product_Code#UPC-E) (comming soon)
-* [ISBN](http://en.wikipedia.org/wiki/ISBN) (comming soon)
+* [EAN-13 (ISBN)](http://en.wikipedia.org/wiki/EAN) (comming soon)
 
 
 ## Supported 2D types
