@@ -20,7 +20,8 @@ Generate 1D and 2D barcodes
 
 ## Requirements
 
-A working installation of [GraphicsMagick](http://www.graphicsmagick.org/).
+- A working installation of [GraphicsMagick](http://www.graphicsmagick.org/).
+- node >= 0.8.0
 
 ## Installing
 
@@ -28,8 +29,9 @@ A working installation of [GraphicsMagick](http://www.graphicsmagick.org/).
 
 ## Usage
 
-	// Set it up and specify your type and options. The following 3
-	// are the only required ones.
+Set it up and specify your type and options. The following 3 are the only
+required ones.
+
 	var barcode = require('barcode');
 	var code39 = barcode('code39', {
 		data: "it works",
@@ -37,12 +39,13 @@ A working installation of [GraphicsMagick](http://www.graphicsmagick.org/).
 		height: 100,
 	});
 
-	// Next choose from the three methods below how you want to output
-	// your barcode.
+Next choose from the three methods below how you want to output your barcode.
 
-	// Get a stream of the final image data. you can collect this and
-	// save out a new PNG (default type), pipe it elsewhere, or save
-	// it to a CDN.
+**Stream**
+
+Get a stream of the final image data. you can collect this and save out a new
+PNG (default type), pipe it elsewhere, or save it to a CDN.
+
 	code39.getStream(function (err, readStream) {
 		if (err) throw err;
 
@@ -50,8 +53,11 @@ A working installation of [GraphicsMagick](http://www.graphicsmagick.org/).
 		readStream.pipe(CdnWriteStream);
 	});
 
-	// Save an image out to the file system, pretty simple. Just be sure
-	// to specify your outfile.
+**File to disk**
+
+Save an image out to the file system, pretty simple. Just be sure to specify
+your outfile.
+
 	var outfile = path.join(__dirname, 'imgs', 'mycode.png')
 	code39.saveImage(outfile, function (err) {
 		if (err) throw err;
@@ -59,9 +65,12 @@ A working installation of [GraphicsMagick](http://www.graphicsmagick.org/).
 		console.log('File has been written!');
 	});
 
-	// Often times, barcodes are single use for a single print or
-	// whatever. With this, we can create one on the fly and just send
-	// the base64 encoded image to the browser through the HTML.
+**Base64 encoded `img` src**
+
+Often times, barcodes are single use for a single print or whatever. With this
+method, we can create one on the fly and just send the base64 encoded image to
+the browser through the HTML.
+
 	code39.getBase64(function (err, imgsrc) {
 		if (err) throw err;
 
