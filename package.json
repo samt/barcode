@@ -27,5 +27,8 @@
   },
   "dependencies": {
     "gm": "1.16.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4"
   }
 }

@@ -8,7 +8,7 @@ Generate 1D and 2D barcodes
 * [Codabar](http://en.wikipedia.org/wiki/Codabar)
 * [Code128](http://en.wikipedia.org/wiki/Code128)
 * [UPC-A](http://en.wikipedia.org/wiki/Universal_Product_Code)
-* [UPC-E](http://en.wikipedia.org/wiki/Universal_Product_Code#UPC-E) (comming soon)
+* [UPC-E](http://en.wikipedia.org/wiki/Universal_Product_Code#UPC-E)
 * [EAN-13 (ISBN)](http://en.wikipedia.org/wiki/EAN) (comming soon)
 
 
