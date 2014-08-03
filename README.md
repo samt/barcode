@@ -78,6 +78,26 @@ the browser through the HTML.
 		res.end('<img src="' + imgsrc + '">');
 	});
 
+## Rewrite
+
+Much of this will be due for a rewrite in the near future. 2.0 might make some
+API changes, but I will keep it as close to the original as possible.
+
+Some goals for the rewrite:
+
+- Externalize as much as possible
+	- checksum calculations
+	- error correcting calculations
+	- Abstract the drawing part
+- Break the process up into more defined and testable steps
+	- Check for issues with settings
+	- Calculate checksums (if applicable)
+	- Create pattern in a data structure
+	- Send the pattern to the drawer
+
+I hope to eventually make it more maintainable this way instead of the endless
+amounts of spaghetti code.
+
 ## License
 
 [The MIT License (MIT)](http://opensource.org/licenses/mit-license.php)
