@@ -32,12 +32,14 @@ Generate 1D and 2D barcodes
 Set it up and specify your type and options. The following 3 are the only
 required ones.
 
-	var barcode = require('barcode');
-	var code39 = barcode('code39', {
-		data: "it works",
-		width: 400,
-		height: 100,
-	});
+```javascript
+var barcode = require('barcode');
+var code39 = barcode('code39', {
+	data: "it works",
+	width: 400,
+	height: 100,
+});
+```
 
 Next choose from the three methods below how you want to output your barcode.
 
@@ -46,24 +48,28 @@ Next choose from the three methods below how you want to output your barcode.
 Get a stream of the final image data. you can collect this and save out a new
 PNG (default type), pipe it elsewhere, or save it to a CDN.
 
-	code39.getStream(function (err, readStream) {
-		if (err) throw err;
+```javascript
+code39.getStream(function (err, readStream) {
+	if (err) throw err;
 
-		// 'readStream' is an instance of ReadableStream
-		readStream.pipe(CdnWriteStream);
-	});
+	// 'readStream' is an instance of ReadableStream
+	readStream.pipe(CdnWriteStream);
+});
+```
 
 **File to disk**
 
 Save an image out to the file system, pretty simple. Just be sure to specify
 your outfile.
 
-	var outfile = path.join(__dirname, 'imgs', 'mycode.png')
-	code39.saveImage(outfile, function (err) {
-		if (err) throw err;
+```javascript
+var outfile = path.join(__dirname, 'imgs', 'mycode.png')
+code39.saveImage(outfile, function (err) {
+	if (err) throw err;
 
-		console.log('File has been written!');
-	});
+	console.log('File has been written!');
+});
+```
 
 **Base64 encoded `img` src**
 
@@ -71,12 +77,14 @@ Often times, barcodes are single use for a single print or whatever. With this
 method, we can create one on the fly and just send the base64 encoded image to
 the browser through the HTML.
 
-	code39.getBase64(function (err, imgsrc) {
-		if (err) throw err;
+```javascript
+code39.getBase64(function (err, imgsrc) {
+	if (err) throw err;
 
-		// if we're using HTTP or another framework
-		res.end('<img src="' + imgsrc + '">');
-	});
+	// if we're using HTTP or another framework
+	res.end('<img src="' + imgsrc + '">');
+});
+```
 
 ## Rewrite
 
@@ -88,7 +96,9 @@ Some goals for the rewrite:
 - Externalize as much as possible
 	- checksum calculations
 	- error correcting calculations
-	- Abstract the drawing part
+- Abstract the drawing part
+	- Allow for the 3 ways to accept the data currently implemented
+	- Be able to print numbers below barcodes
 - Break the process up into more defined and testable steps
 	- Check for issues with settings
 	- Calculate checksums (if applicable)
