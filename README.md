@@ -21,7 +21,7 @@ Generate 1D and 2D barcodes
 ## Requirements
 
 - A working installation of [GraphicsMagick](http://www.graphicsmagick.org/).
-- node >= 0.8.0
+- node >= 0.10.0
 
 ## Installing
 
