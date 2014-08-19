@@ -100,7 +100,8 @@ Things todo:
 
 In the future:
 
-- Abstract drawing to be able to draw with `gm` or output html.
+- Abstract drawing to be able to draw with `gm` or output html (bars with css
+	or canvas)
 
 ## License
 
